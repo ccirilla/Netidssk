@@ -1,0 +1,29 @@
+#include "work_que.h"
+
+void queInit(pQue_t pq,int capacity)
+{
+    bzero(pq,sizeof(pQue_t));
+    pq->queCapacity = capacity;
+    pthread_mutex_init(&pq->mutex,NULL);
+}
+void queInsert(pQue_t pq,pNode_t pnew)
+{
+    if(pq->queTail == NULL)
+        pq->queHead = pq->queTail = pnew;
+    else
+    {
+        pq->queTail->pNext = pnew;
+        pq->queTail = pnew;
+    }
+    ++pq->queSize;
+}
+int queGet(pQue_t pq,pNode_t* node)
+{
+    *node = pq->queHead;
+    if(pq->queSize == 1)
+        pq->queHead = pq->queTail = NULL;
+    else
+        pq->queHead = pq->queHead->pNext;
+    --pq->queSize;
+    return 0;
+}

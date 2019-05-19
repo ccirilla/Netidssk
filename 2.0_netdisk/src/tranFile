@@ -1,0 +1,24 @@
+#include "factory.h"
+
+int tranFile(int socket_fd)
+{
+    Train_t train;
+    int fd,ret;
+    struct stat stat;
+    fd = open(FILENAME,O_RDWR);
+    train.dataLen = strlen(FILENAME);
+    strcpy(train.buf,FILENAME);
+    ret = send(socket_fd,&train,4+train.dataLen,0);
+    ERROR_CHECK(ret,-1,"send");
+    fstat(fd,&stat);
+    train.dataLen = sizeof(stat.st_size);
+    memcpy(train.buf,&stat.st_size,sizeof(stat.st_size));
+    ret = send(socket_fd,&train,4+train.dataLen,0);
+    ERROR_CHECK(ret,-1,"send");
+    char *p = (char*)mmap(NULL,stat.st_size,PROT_READ,MAP_SHARED,fd,0);
+    ret = send(socket_fd,p,stat.st_size,0);
+    ERROR_CHECK(ret,-1,"send");
+    munmap(p,stat.st_size);
+    return 0;
+}
+

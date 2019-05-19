@@ -1,0 +1,54 @@
+#include "function.h"
+
+int recvCYL(int fd,void *pbuf,int len)
+{
+    char *buf = (char*)pbuf;
+    int total = 0,ret;
+    while(total<len)
+    {
+        ret = recv(fd,buf+total,len-total,0);
+        if(ret == 0)
+        {
+            printf("server is update ,download suspend\n");
+            exit(0);
+        }
+        total += ret;
+    //    printf("%d  \n",total);
+    }
+    return 0;
+}
+
+int main(int argc,char *argv[])
+{
+    ARGS_CHECK(argc,3);
+	int cFd;
+    struct timeval start,end;
+	cFd=socket(AF_INET,SOCK_STREAM,0);
+	ERROR_CHECK(cFd,-1,"socket");
+	struct sockaddr_in ser;
+	bzero(&ser,sizeof(ser));
+	ser.sin_family=AF_INET;
+	ser.sin_port=htons(atoi(argv[2]));
+	ser.sin_addr.s_addr=inet_addr(argv[1]);//点分十进制转为32位的网络字节序
+	int ret,len,fd;
+    off_t file_size;
+    char buf[4096];
+    bzero(buf,sizeof(buf));
+	ret=connect(cFd,(struct sockaddr*)&ser,sizeof(ser));
+	ERROR_CHECK(ret,-1,"connect");
+    printf("connect successful\n");
+    gettimeofday(&start,NULL);
+    recvCYL(cFd,&len,4);
+    recvCYL(cFd,buf,len);
+    fd =  open(buf,O_CREAT|O_RDWR,0666);
+    recvCYL(cFd,&len,4);
+    recvCYL(cFd,&file_size,len);
+    ftruncate(fd,file_size);
+    char *p = (char*)mmap(NULL,file_size,PROT_READ|PROT_WRITE,MAP_SHARED,fd,0);
+    recvCYL(cFd,p,file_size);
+    munmap(p,file_size);
+    gettimeofday(&end,NULL);
+    printf("\rhave download 100%%  \n");
+    printf("used time : %ld\n",1000000*(end.tv_sec-start.tv_sec)+end.tv_usec-start.tv_usec);
+	return 0;
+}

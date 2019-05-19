@@ -1,0 +1,68 @@
+Sun May  5 15:48:09 2019
+
+connect  ip:192.168.3.114 port:37848  time Sun May  5 15:48:17 2019
+
+REGISTER_PRE  name: test  ip:192.168.3.114 port:37848  time: Sun May  5 15:48:17 2019
+ 
+connect  ip:192.168.3.114 port:37850  time Sun May  5 15:48:25 2019
+
+REGISTER_PRE  name: admin  ip:192.168.3.114 port:37850  time: Sun May  5 15:48:25 2019
+ 
+connect  ip:192.168.3.114 port:37852  time Sun May  5 15:48:35 2019
+
+REGISTER_PRE  name: test1  ip:192.168.3.114 port:37852  time: Sun May  5 15:48:35 2019
+ 
+REGISTER_OK  name: test1  time: Sun May  5 15:48:35 2019
+ 
+connect  ip:192.168.3.114 port:37854  time Sun May  5 15:49:00 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37854  time: Sun May  5 15:49:00 2019
+ 
+connect  ip:192.168.3.114 port:37856  time Sun May  5 15:49:25 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37856  time: Sun May  5 15:49:25 2019
+ 
+connect  ip:192.168.3.114 port:37858  time Sun May  5 15:49:50 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37858  time: Sun May  5 15:49:50 2019
+ 
+connect  ip:192.168.3.114 port:37860  time Sun May  5 15:50:15 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37860  time: Sun May  5 15:50:15 2019
+ 
+connect  ip:192.168.3.114 port:37862  time Sun May  5 15:50:40 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37862  time: Sun May  5 15:50:40 2019
+ 
+connect  ip:192.168.3.114 port:37864  time Sun May  5 15:51:05 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37864  time: Sun May  5 15:51:05 2019
+ 
+connect  ip:192.168.3.114 port:37866  time Sun May  5 15:51:30 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37866  time: Sun May  5 15:51:30 2019
+ 
+connect  ip:192.168.3.114 port:37868  time Sun May  5 15:51:55 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37868  time: Sun May  5 15:51:55 2019
+ 
+connect  ip:192.168.3.114 port:37870  time Sun May  5 15:52:20 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37870  time: Sun May  5 15:52:20 2019
+ 
+connect  ip:192.168.3.114 port:37872  time Sun May  5 15:52:45 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37872  time: Sun May  5 15:52:45 2019
+ 
+connect  ip:192.168.3.114 port:37876  time Sun May  5 15:53:10 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37876  time: Sun May  5 15:53:10 2019
+ 
+connect  ip:192.168.3.114 port:37878  time Sun May  5 15:53:35 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37878  time: Sun May  5 15:53:35 2019
+ 
+connect  ip:192.168.3.114 port:37880  time Sun May  5 15:54:00 2019
+
+TOKEN_PLESE  name: test1  ip:192.168.3.114 port:37880  time: Sun May  5 15:54:00 2019
+ 

@@ -1,0 +1,82 @@
+Mon May  6 18:24:26 2019
+
+connect  ip:192.168.3.114 port:39756  time Mon May  6 18:24:40 2019
+
+REGISTER_PRE  name: test1  ip:192.168.3.114 port:39756  time: Mon May  6 18:24:40 2019
+ 
+REGISTER_OK  name: test1  time: Mon May  6 18:24:40 2019
+ 
+connect  ip:192.168.3.114 port:39774  time Mon May  6 18:25:42 2019
+
+REGISTER_PRE  name: test1  ip:192.168.3.114 port:39774  time: Mon May  6 18:25:42 2019
+ 
+REGISTER_OK  name: test1  time: Mon May  6 18:25:42 2019
+ 
+connect  ip:192.168.3.114 port:39796  time Mon May  6 18:27:17 2019
+
+REGISTER_PRE  name: zz  ip:192.168.3.114 port:39796  time: Mon May  6 18:27:17 2019
+ 
+REGISTER_OK  name: zz  time: Mon May  6 18:27:17 2019
+ 
+connect  ip:192.168.3.114 port:39814  time Mon May  6 18:28:24 2019
+
+REGISTER_PRE  name: zz  ip:192.168.3.114 port:39814  time: Mon May  6 18:28:24 2019
+ 
+REGISTER_OK  name: zz  time: Mon May  6 18:28:24 2019
+ 
+connect  ip:192.168.3.114 port:39816  time Mon May  6 18:29:46 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39816  time: Mon May  6 18:29:46 2019
+ 
+connect  ip:192.168.3.114 port:39818  time Mon May  6 18:30:18 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39818  time: Mon May  6 18:30:18 2019
+ 
+connect  ip:192.168.3.114 port:39820  time Mon May  6 18:30:28 2019
+
+REGISTER_PRE  name: test1  ip:192.168.3.114 port:39820  time: Mon May  6 18:30:28 2019
+ 
+REGISTER_OK  name: test1  time: Mon May  6 18:30:28 2019
+ 
+connect  ip:192.168.3.114 port:39822  time Mon May  6 18:30:31 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39822  time: Mon May  6 18:30:31 2019
+ 
+connect  ip:192.168.3.114 port:39824  time Mon May  6 18:31:00 2019
+
+LOGIN_PRE  name: zz  ip:192.168.3.114 port:39824  time: Mon May  6 18:31:00 2019
+ 
+connect  ip:192.168.3.114 port:39826  time Mon May  6 18:31:00 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39826  time: Mon May  6 18:31:00 2019
+ 
+connect  ip:192.168.3.114 port:39828  time Mon May  6 18:31:20 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39828  time: Mon May  6 18:31:20 2019
+ 
+connect  ip:192.168.3.114 port:39830  time Mon May  6 18:31:21 2019
+
+LOGIN_PRE  name: test  ip:192.168.3.114 port:39830  time: Mon May  6 18:31:21 2019
+ 
+connect  ip:192.168.3.114 port:39832  time Mon May  6 18:31:27 2019
+
+REGISTER_PRE  name: qwe  ip:192.168.3.114 port:39832  time: Mon May  6 18:31:27 2019
+ 
+connect  ip:192.168.3.114 port:39834  time Mon May  6 18:31:27 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39834  time: Mon May  6 18:31:27 2019
+ 
+connect  ip:192.168.3.114 port:39838  time Mon May  6 18:31:35 2019
+
+REGISTER_PRE  name: test  ip:192.168.3.114 port:39838  time: Mon May  6 18:31:35 2019
+ 
+connect  ip:192.168.3.114 port:39840  time Mon May  6 18:31:35 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39840  time: Mon May  6 18:31:35 2019
+ 
+REGISTER_OK  name: test  time: Mon May  6 18:31:35 2019
+ 
+connect  ip:192.168.3.114 port:39842  time Mon May  6 18:31:45 2019
+
+TOKEN_PLESE  name: zz  ip:192.168.3.114 port:39842  time: Mon May  6 18:31:45 2019
+ 
